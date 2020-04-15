@@ -42,3 +42,7 @@ php run str:reverse
 ```
 php run
 ```
+
+### Demo
+
+![mx5Kv6Yna6](https://user-images.githubusercontent.com/10015302/79311493-17a3f400-7f30-11ea-9dd9-92b43ae1ba39.gif)
