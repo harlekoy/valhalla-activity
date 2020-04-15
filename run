@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Symfony\Component\Dotenv\Dotenv;
+$dotenv = new Dotenv();
+$dotenv->load(__DIR__.'/.env');
+
+// Instantiate application
+$app = new Application();
+
+// Available command
+$app->add(new \Valhalla\Commands\StringReverseCommand());
+$app->add(new \Valhalla\Commands\ArrayHighAndLowCommand());
+$app->add(new \Valhalla\Commands\ArraySortCommand());
+$app->add(new \Valhalla\Commands\StringRecurringCommand());
+$app->add(new \Valhalla\Commands\ArrayNumberCombinationCommand());
+
+// Run command
+$app->run();
